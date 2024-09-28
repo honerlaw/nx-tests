@@ -1,6 +1,6 @@
 {
   "name": "second",
-  "version": "1.0.1-2",
+  "version": "1.0.1-alpha-37fefdf.0",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",

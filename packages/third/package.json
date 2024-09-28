@@ -1,6 +1,6 @@
 {
   "name": "third",
-  "version": "1.0.2",
+  "version": "1.0.3-alpha-37fefdf.0",
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "first": "1.0.2"
+    "first": "1.0.3-alpha-37fefdf.0"
   },
   "author": "",
   "license": "ISC",
