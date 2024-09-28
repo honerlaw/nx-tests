@@ -1,0 +1,19 @@
+{
+  "name": "nx-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces",
+    "clean:install": "npm run clean --workspaces && npm install",
+    "prerelease": "npm run version --preid=alpha",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "packages/second",
+    "packages/first"
+  ]
+}
