@@ -3,12 +3,19 @@
   "release": {
     "projectsRelationship": "independent",
     "changelog": {
-      "automaticFromRef": true
+      "automaticFromRef": true,
+      "workspaceChangelog": true,
+      "projectChangelogs": true
     },
     "version":{
       "generatorOptions": {
         "updateDependents": "auto"
       }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
     }
   },
   "defaultBase": "main"
