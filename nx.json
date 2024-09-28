@@ -1,8 +1,14 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
+    "projectsRelationship": "independent",
     "changelog": {
       "automaticFromRef": true
+    },
+    "version":{
+      "generatorOptions": {
+        "updateDependents": "auto"
+      }
     }
   },
   "defaultBase": "main"
