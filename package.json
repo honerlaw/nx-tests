@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build --workspaces",
-    "clean": "npm run clean --workspaces",
-    "clean:install": "npm run clean --workspaces && npm install",
+    "build": "npx nx run-many -t build",
+    "clean": "npx nx run-many -t clean",
+    "clean:install": "npm run clean && npm install",
     "prerelease": "npm version prerelease --preid=alpha --workspaces",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,13 @@
   "workspaces": [
     "packages/second",
     "packages/first"
-  ]
+  ],
+  "devDependencies": {
+    "@nx/js": "^19.8.2",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "nx": "19.8.2"
+  },
+  "dependencies": {}
 }
